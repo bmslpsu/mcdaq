@@ -11,8 +11,8 @@ import rosparam
 from std_msgs.msg import Header
 from mcdaq.msg import MC_AnalogIN
 
-from dynamic_reconfigure.server import Server
-from mcdaq.cfg import mcdaqConfig
+#from dynamic_reconfigure.server import Server
+#from mcdaq.cfg import mcdaqConfig
 
 class GetAI:
 

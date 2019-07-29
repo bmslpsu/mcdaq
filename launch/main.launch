@@ -1,0 +1,11 @@
+<launch>
+	<!-- ========================================================== -->
+	<!-- 						Launch MC DAQ           			-->
+	<!-- ========================================================== -->
+
+	<!-- include file="$(find Kinefly)/launch/$(env RIG)/params_phidgetsanalog.launch" 		/ -->
+
+	<node name="read_AI"     		pkg="mcdaq"   	type="read_AI.py"      		required="true" />
+	<node name="reconfig_param" 	pkg="mcdaq"   	type="reconfig_param.py"   	required="true" />
+
+</launch>
