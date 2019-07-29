@@ -9,7 +9,10 @@ import rospy
 import rosparam
 
 from std_msgs.msg import Header
-from daq_test_1.msg import MC_AnalogIN
+from mcdaq.msg import MC_AnalogIN
+
+from dynamic_reconfigure.server import Server
+from mcdaq.cfg import mcdaqConfig
 
 class GetAI:
 
