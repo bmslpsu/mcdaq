@@ -12,7 +12,7 @@ def callback(config, level):
     return config
 
 if __name__ == "__main__":
-    rospy.init_node("reconfig_param", anonymous = False)
+    rospy.init_node("mcdaq_reconfig_param", anonymous = False)
 
     srv = Server(mcdaqConfig, callback)
     rospy.spin()

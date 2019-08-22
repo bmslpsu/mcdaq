@@ -3,9 +3,10 @@
 	<!-- 						Launch MC DAQ           			-->
 	<!-- ========================================================== -->
 
-	<!-- include file="$(find Kinefly)/launch/$(env RIG)/params_phidgetsanalog.launch" 		/ -->
+	<node name="ReadAI"    		pkg="mcdaq"   	type="ReadAI.py"  			required="true" />
 
-	<node name="read_AI"     		pkg="mcdaq"   	type="read_AI.py"      		required="true" />
-	<node name="reconfig_param" 	pkg="mcdaq"   	type="reconfig_param.py"   	required="true" />
+	<rosparam param="mcdaq/AI_channels" > [0,1] </rosparam>
+
+	<!-- node name="reconfig_param" 	pkg="mcdaq"   	type="reconfig_param.py"   	required="true" / -->
 
 </launch>
