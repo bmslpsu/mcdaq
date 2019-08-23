@@ -7,6 +7,4 @@
 
 	<rosparam param="mcdaq/AI_channels" > [0,1] </rosparam>
 
-	<!-- node name="reconfig_param" 	pkg="mcdaq"   	type="reconfig_param.py"   	required="true" / -->
-
 </launch>
